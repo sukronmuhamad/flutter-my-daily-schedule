@@ -1,0 +1,32 @@
+name: my_schedule
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.5 # Library simpan data permanen
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1 # Library pembuat icon (Hanya ada satu di sini)
+
+flutter:
+  uses-material-design: true
+  # Daftarkan folder assets agar gambar bisa terbaca oleh sistem
+  assets:
+    - assets/logo.jpeg
+
+# Konfigurasi Launcher Icons (Taruh paling bawah dan tidak menjorok ke dalam)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpeg"
+  min_sdk_android: 21
